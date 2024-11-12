@@ -8,8 +8,6 @@ import styles from "./navigation.module.css";
 export default function Navigation() {
   const path = usePathname();
   const [count, setCount] = useState(0);
-  console.log(count);
-  console.log(path);
   return (
     <nav className={styles.nav}>
       <ul>

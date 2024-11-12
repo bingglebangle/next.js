@@ -9,7 +9,11 @@ interface IMovieProps {
   poster_path: string;
 }
 
-export default function MovieDetail({ title, id, poster_path }: IMovieProps) {
+export default function MovieDetailPage({
+  title,
+  id,
+  poster_path,
+}: IMovieProps) {
   const router = useRouter();
   const onClick = () => {
     router.push(`/movies/${id}`);
