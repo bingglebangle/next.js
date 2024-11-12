@@ -1,6 +1,8 @@
 import Navigation from "../components/navigation";
+import { Metadata } from "next";
+import "../style/global.css";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: {
     template: "%s | Next Movies",
     default: "Loading...",
