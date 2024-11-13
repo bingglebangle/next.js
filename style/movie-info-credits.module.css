@@ -1,0 +1,30 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.con1 {
+  display: grid;
+  grid-template-columns: repeat(6, 4fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.con2 {
+  align-items: center;
+}
+.con2 img {
+  border-radius: 10px;
+  max-width: 150px;
+  max-height: 400px;
+}
+
+.con2 p {
+  margin: 0;
+  text-align: center;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 140px;
+}

@@ -12,13 +12,24 @@
 }
 
 .nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 0 1px 0;
+}
+
+.nav li {
   list-style: none;
   transform: none;
   transition: all 0.1s ease-in-out;
 }
 
-.nav ul:hover {
-  transform: scale(1.05);
+.nav li:hover {
+  transform: scale(1.1);
+}
+
+.nav li:active {
+  color: rgb(234, 220, 100);
 }
 
 .nav a {

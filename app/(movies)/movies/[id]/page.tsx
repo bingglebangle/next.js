@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import MovieInfo from "../../../../components/movie-info";
 import MovieVideo from "../../../../components/movie-videos";
 import { getMovie } from "../../../../components/movie-info";
+import Credits from "../../../../components/movie-info-credits";
 
 // async function getMovie(id: string) {
 //   await new Promise((resolve) => setTimeout(resolve, 5000));
@@ -37,6 +38,9 @@ export default async function MovieDetail({ params: { id } }: IParams) {
       <Suspense fallback={<h1>Loading movie info</h1>}>
         {/**Suspense : 로딩 대기화면 */}
         <MovieInfo id={id} />
+      </Suspense>
+      <Suspense>
+        <Credits id={id} />
       </Suspense>
       <Suspense fallback={<h1>Loading movie video</h1>}>
         <MovieVideo id={id} />

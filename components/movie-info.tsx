@@ -17,16 +17,20 @@ export default async function MovieInfo({ id }: { id: string }) {
         alt={movie.poster_path}
         className={styles.poster}
       />
+
       <div className={styles.info}>
-        <h2 className={styles.title}>{movie.title}</h2>
-        <h2>🗳️{movie.vote_average.toFixed(1)}</h2>
-        <p>{movie.overview}</p>
-        <Link href={`/movies/${id}/providers`}>
-          <h2>Providers</h2>
-        </Link>
         <a href={movie.hompage} target={"_blank"}>
           HomePage &rarr;
         </a>
+        <h2 className={styles.title}>{movie.title}</h2>
+
+        <h2>🗳️{movie.vote_average.toFixed(1)}</h2>
+
+        <p>{movie.overview}</p>
+
+        <Link href={`/movies/${id}/providers`}>
+          <h2>Providers </h2>
+        </Link>
       </div>
     </div>
   );

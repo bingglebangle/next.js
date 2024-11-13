@@ -1,6 +1,8 @@
 {
   "/(movies)/movies/[id]/page": "app/(movies)/movies/[id]/page.js",
-  "/(home)/page": "app/(home)/page.js",
   "/(movies)/movies/[id]/providers/page": "app/(movies)/movies/[id]/providers/page.js",
+  "/(movies)/movies/[id]/credits/page": "app/(movies)/movies/[id]/credits/page.js",
+  "/(movies)/movies/[id]/similar/page": "app/(movies)/movies/[id]/similar/page.js",
+  "/(home)/page": "app/(home)/page.js",
   "/about-us/page": "app/about-us/page.js"
 }

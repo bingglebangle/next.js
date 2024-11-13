@@ -1,0 +1,13 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.con1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px;
+}
+
+.con1 img {
+  max-width: 500px;
+}
